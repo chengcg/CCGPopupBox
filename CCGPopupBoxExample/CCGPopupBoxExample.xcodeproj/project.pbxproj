@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDE8CA111BF1A234001DE892 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA101BF1A234001DE892 /* main.m */; };
+		CDE8CA141BF1A234001DE892 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA131BF1A234001DE892 /* AppDelegate.m */; };
+		CDE8CA171BF1A234001DE892 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA161BF1A234001DE892 /* ViewController.m */; };
+		CDE8CA1A1BF1A234001DE892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE8CA181BF1A234001DE892 /* Main.storyboard */; };
+		CDE8CA1C1BF1A234001DE892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE8CA1B1BF1A234001DE892 /* Assets.xcassets */; };
+		CDE8CA1F1BF1A234001DE892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE8CA1D1BF1A234001DE892 /* LaunchScreen.storyboard */; };
+		CDE8CA2A1BF1A234001DE892 /* CCGPopupBoxExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA291BF1A234001DE892 /* CCGPopupBoxExampleTests.m */; };
+		CDE8CA351BF1A234001DE892 /* CCGPopupBoxExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA341BF1A234001DE892 /* CCGPopupBoxExampleUITests.m */; };
+		CDE8CA521BF1A255001DE892 /* CCGPopupBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA441BF1A255001DE892 /* CCGPopupBox.m */; };
+		CDE8CA531BF1A255001DE892 /* CCGPopupBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA441BF1A255001DE892 /* CCGPopupBox.m */; };
+		CDE8CA541BF1A255001DE892 /* CCGPopupBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA441BF1A255001DE892 /* CCGPopupBox.m */; };
+		CDE8CA551BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA461BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m */; };
+		CDE8CA561BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA461BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m */; };
+		CDE8CA571BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA461BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m */; };
+		CDE8CA581BF1A255001DE892 /* CCGPopupBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA481BF1A255001DE892 /* CCGPopupBoxViewController.m */; };
+		CDE8CA591BF1A255001DE892 /* CCGPopupBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA481BF1A255001DE892 /* CCGPopupBoxViewController.m */; };
+		CDE8CA5A1BF1A255001DE892 /* CCGPopupBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA481BF1A255001DE892 /* CCGPopupBoxViewController.m */; };
+		CDE8CA5B1BF1A255001DE892 /* MultiItemsPopupBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA4B1BF1A255001DE892 /* MultiItemsPopupBox.m */; };
+		CDE8CA5C1BF1A255001DE892 /* MultiItemsPopupBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA4B1BF1A255001DE892 /* MultiItemsPopupBox.m */; };
+		CDE8CA5D1BF1A255001DE892 /* MultiItemsPopupBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA4B1BF1A255001DE892 /* MultiItemsPopupBox.m */; };
+		CDE8CA5E1BF1A255001DE892 /* PopupItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA4D1BF1A255001DE892 /* PopupItemData.m */; };
+		CDE8CA5F1BF1A255001DE892 /* PopupItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA4D1BF1A255001DE892 /* PopupItemData.m */; };
+		CDE8CA601BF1A255001DE892 /* PopupItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA4D1BF1A255001DE892 /* PopupItemData.m */; };
+		CDE8CA6B1BF1EE48001DE892 /* SelectColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA691BF1EE48001DE892 /* SelectColorView.m */; };
+		CDE8CA6C1BF1EE48001DE892 /* SelectColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA691BF1EE48001DE892 /* SelectColorView.m */; };
+		CDE8CA6D1BF1EE48001DE892 /* SelectColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE8CA691BF1EE48001DE892 /* SelectColorView.m */; };
+		CDE8CA6E1BF1EE48001DE892 /* SelectColorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE8CA6A1BF1EE48001DE892 /* SelectColorView.xib */; };
+		CDE8CA6F1BF1EE48001DE892 /* SelectColorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE8CA6A1BF1EE48001DE892 /* SelectColorView.xib */; };
+		CDE8CA701BF1EE48001DE892 /* SelectColorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE8CA6A1BF1EE48001DE892 /* SelectColorView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDE8CA261BF1A234001DE892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE8CA041BF1A234001DE892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE8CA0B1BF1A234001DE892;
+			remoteInfo = CCGPopupBoxExample;
+		};
+		CDE8CA311BF1A234001DE892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE8CA041BF1A234001DE892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE8CA0B1BF1A234001DE892;
+			remoteInfo = CCGPopupBoxExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDE8CA0C1BF1A234001DE892 /* CCGPopupBoxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGPopupBoxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE8CA101BF1A234001DE892 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDE8CA121BF1A234001DE892 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDE8CA131BF1A234001DE892 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDE8CA151BF1A234001DE892 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CDE8CA161BF1A234001DE892 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CDE8CA191BF1A234001DE892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDE8CA1B1BF1A234001DE892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDE8CA1E1BF1A234001DE892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDE8CA201BF1A234001DE892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE8CA251BF1A234001DE892 /* CCGPopupBoxExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCGPopupBoxExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE8CA291BF1A234001DE892 /* CCGPopupBoxExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCGPopupBoxExampleTests.m; sourceTree = "<group>"; };
+		CDE8CA2B1BF1A234001DE892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE8CA301BF1A234001DE892 /* CCGPopupBoxExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCGPopupBoxExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE8CA341BF1A234001DE892 /* CCGPopupBoxExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCGPopupBoxExampleUITests.m; sourceTree = "<group>"; };
+		CDE8CA361BF1A234001DE892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE8CA431BF1A255001DE892 /* CCGPopupBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGPopupBox.h; sourceTree = "<group>"; };
+		CDE8CA441BF1A255001DE892 /* CCGPopupBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGPopupBox.m; sourceTree = "<group>"; };
+		CDE8CA451BF1A255001DE892 /* CCGPopupBoxOverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGPopupBoxOverlayWindow.h; sourceTree = "<group>"; };
+		CDE8CA461BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGPopupBoxOverlayWindow.m; sourceTree = "<group>"; };
+		CDE8CA471BF1A255001DE892 /* CCGPopupBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGPopupBoxViewController.h; sourceTree = "<group>"; };
+		CDE8CA481BF1A255001DE892 /* CCGPopupBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGPopupBoxViewController.m; sourceTree = "<group>"; };
+		CDE8CA4A1BF1A255001DE892 /* MultiItemsPopupBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiItemsPopupBox.h; sourceTree = "<group>"; };
+		CDE8CA4B1BF1A255001DE892 /* MultiItemsPopupBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiItemsPopupBox.m; sourceTree = "<group>"; };
+		CDE8CA4C1BF1A255001DE892 /* PopupItemData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupItemData.h; sourceTree = "<group>"; };
+		CDE8CA4D1BF1A255001DE892 /* PopupItemData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupItemData.m; sourceTree = "<group>"; };
+		CDE8CA681BF1EE48001DE892 /* SelectColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectColorView.h; sourceTree = "<group>"; };
+		CDE8CA691BF1EE48001DE892 /* SelectColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectColorView.m; sourceTree = "<group>"; };
+		CDE8CA6A1BF1EE48001DE892 /* SelectColorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectColorView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDE8CA091BF1A234001DE892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE8CA221BF1A234001DE892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE8CA2D1BF1A234001DE892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDE8CA031BF1A234001DE892 = {
+			isa = PBXGroup;
+			children = (
+				CDE8CA671BF1EE48001DE892 /* SelectColorView */,
+				CDE8CA421BF1A255001DE892 /* CCGPopupBox */,
+				CDE8CA491BF1A255001DE892 /* MultiItemsPopupBox */,
+				CDE8CA0E1BF1A234001DE892 /* CCGPopupBoxExample */,
+				CDE8CA281BF1A234001DE892 /* CCGPopupBoxExampleTests */,
+				CDE8CA331BF1A234001DE892 /* CCGPopupBoxExampleUITests */,
+				CDE8CA0D1BF1A234001DE892 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDE8CA0D1BF1A234001DE892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8CA0C1BF1A234001DE892 /* CCGPopupBoxExample.app */,
+				CDE8CA251BF1A234001DE892 /* CCGPopupBoxExampleTests.xctest */,
+				CDE8CA301BF1A234001DE892 /* CCGPopupBoxExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDE8CA0E1BF1A234001DE892 /* CCGPopupBoxExample */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8CA121BF1A234001DE892 /* AppDelegate.h */,
+				CDE8CA131BF1A234001DE892 /* AppDelegate.m */,
+				CDE8CA151BF1A234001DE892 /* ViewController.h */,
+				CDE8CA161BF1A234001DE892 /* ViewController.m */,
+				CDE8CA181BF1A234001DE892 /* Main.storyboard */,
+				CDE8CA1B1BF1A234001DE892 /* Assets.xcassets */,
+				CDE8CA1D1BF1A234001DE892 /* LaunchScreen.storyboard */,
+				CDE8CA201BF1A234001DE892 /* Info.plist */,
+				CDE8CA0F1BF1A234001DE892 /* Supporting Files */,
+			);
+			path = CCGPopupBoxExample;
+			sourceTree = "<group>";
+		};
+		CDE8CA0F1BF1A234001DE892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8CA101BF1A234001DE892 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDE8CA281BF1A234001DE892 /* CCGPopupBoxExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8CA291BF1A234001DE892 /* CCGPopupBoxExampleTests.m */,
+				CDE8CA2B1BF1A234001DE892 /* Info.plist */,
+			);
+			path = CCGPopupBoxExampleTests;
+			sourceTree = "<group>";
+		};
+		CDE8CA331BF1A234001DE892 /* CCGPopupBoxExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8CA341BF1A234001DE892 /* CCGPopupBoxExampleUITests.m */,
+				CDE8CA361BF1A234001DE892 /* Info.plist */,
+			);
+			path = CCGPopupBoxExampleUITests;
+			sourceTree = "<group>";
+		};
+		CDE8CA421BF1A255001DE892 /* CCGPopupBox */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8CA431BF1A255001DE892 /* CCGPopupBox.h */,
+				CDE8CA441BF1A255001DE892 /* CCGPopupBox.m */,
+				CDE8CA451BF1A255001DE892 /* CCGPopupBoxOverlayWindow.h */,
+				CDE8CA461BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m */,
+				CDE8CA471BF1A255001DE892 /* CCGPopupBoxViewController.h */,
+				CDE8CA481BF1A255001DE892 /* CCGPopupBoxViewController.m */,
+			);
+			name = CCGPopupBox;
+			path = ../CCGPopupBox;
+			sourceTree = "<group>";
+		};
+		CDE8CA491BF1A255001DE892 /* MultiItemsPopupBox */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8CA4A1BF1A255001DE892 /* MultiItemsPopupBox.h */,
+				CDE8CA4B1BF1A255001DE892 /* MultiItemsPopupBox.m */,
+				CDE8CA4C1BF1A255001DE892 /* PopupItemData.h */,
+				CDE8CA4D1BF1A255001DE892 /* PopupItemData.m */,
+			);
+			name = MultiItemsPopupBox;
+			path = ../MultiItemsPopupBox;
+			sourceTree = "<group>";
+		};
+		CDE8CA671BF1EE48001DE892 /* SelectColorView */ = {
+			isa = PBXGroup;
+			children = (
+				CDE8CA681BF1EE48001DE892 /* SelectColorView.h */,
+				CDE8CA691BF1EE48001DE892 /* SelectColorView.m */,
+				CDE8CA6A1BF1EE48001DE892 /* SelectColorView.xib */,
+			);
+			name = SelectColorView;
+			path = ../SelectColorView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDE8CA0B1BF1A234001DE892 /* CCGPopupBoxExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE8CA391BF1A234001DE892 /* Build configuration list for PBXNativeTarget "CCGPopupBoxExample" */;
+			buildPhases = (
+				CDE8CA081BF1A234001DE892 /* Sources */,
+				CDE8CA091BF1A234001DE892 /* Frameworks */,
+				CDE8CA0A1BF1A234001DE892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCGPopupBoxExample;
+			productName = CCGPopupBoxExample;
+			productReference = CDE8CA0C1BF1A234001DE892 /* CCGPopupBoxExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDE8CA241BF1A234001DE892 /* CCGPopupBoxExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE8CA3C1BF1A234001DE892 /* Build configuration list for PBXNativeTarget "CCGPopupBoxExampleTests" */;
+			buildPhases = (
+				CDE8CA211BF1A234001DE892 /* Sources */,
+				CDE8CA221BF1A234001DE892 /* Frameworks */,
+				CDE8CA231BF1A234001DE892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE8CA271BF1A234001DE892 /* PBXTargetDependency */,
+			);
+			name = CCGPopupBoxExampleTests;
+			productName = CCGPopupBoxExampleTests;
+			productReference = CDE8CA251BF1A234001DE892 /* CCGPopupBoxExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDE8CA2F1BF1A234001DE892 /* CCGPopupBoxExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE8CA3F1BF1A234001DE892 /* Build configuration list for PBXNativeTarget "CCGPopupBoxExampleUITests" */;
+			buildPhases = (
+				CDE8CA2C1BF1A234001DE892 /* Sources */,
+				CDE8CA2D1BF1A234001DE892 /* Frameworks */,
+				CDE8CA2E1BF1A234001DE892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE8CA321BF1A234001DE892 /* PBXTargetDependency */,
+			);
+			name = CCGPopupBoxExampleUITests;
+			productName = CCGPopupBoxExampleUITests;
+			productReference = CDE8CA301BF1A234001DE892 /* CCGPopupBoxExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDE8CA041BF1A234001DE892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = ccg;
+				TargetAttributes = {
+					CDE8CA0B1BF1A234001DE892 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					CDE8CA241BF1A234001DE892 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CDE8CA0B1BF1A234001DE892;
+					};
+					CDE8CA2F1BF1A234001DE892 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CDE8CA0B1BF1A234001DE892;
+					};
+				};
+			};
+			buildConfigurationList = CDE8CA071BF1A234001DE892 /* Build configuration list for PBXProject "CCGPopupBoxExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDE8CA031BF1A234001DE892;
+			productRefGroup = CDE8CA0D1BF1A234001DE892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDE8CA0B1BF1A234001DE892 /* CCGPopupBoxExample */,
+				CDE8CA241BF1A234001DE892 /* CCGPopupBoxExampleTests */,
+				CDE8CA2F1BF1A234001DE892 /* CCGPopupBoxExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDE8CA0A1BF1A234001DE892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE8CA1F1BF1A234001DE892 /* LaunchScreen.storyboard in Resources */,
+				CDE8CA1C1BF1A234001DE892 /* Assets.xcassets in Resources */,
+				CDE8CA6E1BF1EE48001DE892 /* SelectColorView.xib in Resources */,
+				CDE8CA1A1BF1A234001DE892 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE8CA231BF1A234001DE892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE8CA6F1BF1EE48001DE892 /* SelectColorView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE8CA2E1BF1A234001DE892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE8CA701BF1EE48001DE892 /* SelectColorView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDE8CA081BF1A234001DE892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE8CA171BF1A234001DE892 /* ViewController.m in Sources */,
+				CDE8CA141BF1A234001DE892 /* AppDelegate.m in Sources */,
+				CDE8CA521BF1A255001DE892 /* CCGPopupBox.m in Sources */,
+				CDE8CA581BF1A255001DE892 /* CCGPopupBoxViewController.m in Sources */,
+				CDE8CA111BF1A234001DE892 /* main.m in Sources */,
+				CDE8CA551BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m in Sources */,
+				CDE8CA5B1BF1A255001DE892 /* MultiItemsPopupBox.m in Sources */,
+				CDE8CA6B1BF1EE48001DE892 /* SelectColorView.m in Sources */,
+				CDE8CA5E1BF1A255001DE892 /* PopupItemData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE8CA211BF1A234001DE892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE8CA561BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m in Sources */,
+				CDE8CA531BF1A255001DE892 /* CCGPopupBox.m in Sources */,
+				CDE8CA2A1BF1A234001DE892 /* CCGPopupBoxExampleTests.m in Sources */,
+				CDE8CA5F1BF1A255001DE892 /* PopupItemData.m in Sources */,
+				CDE8CA6C1BF1EE48001DE892 /* SelectColorView.m in Sources */,
+				CDE8CA591BF1A255001DE892 /* CCGPopupBoxViewController.m in Sources */,
+				CDE8CA5C1BF1A255001DE892 /* MultiItemsPopupBox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE8CA2C1BF1A234001DE892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE8CA571BF1A255001DE892 /* CCGPopupBoxOverlayWindow.m in Sources */,
+				CDE8CA541BF1A255001DE892 /* CCGPopupBox.m in Sources */,
+				CDE8CA351BF1A234001DE892 /* CCGPopupBoxExampleUITests.m in Sources */,
+				CDE8CA601BF1A255001DE892 /* PopupItemData.m in Sources */,
+				CDE8CA6D1BF1EE48001DE892 /* SelectColorView.m in Sources */,
+				CDE8CA5A1BF1A255001DE892 /* CCGPopupBoxViewController.m in Sources */,
+				CDE8CA5D1BF1A255001DE892 /* MultiItemsPopupBox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDE8CA271BF1A234001DE892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE8CA0B1BF1A234001DE892 /* CCGPopupBoxExample */;
+			targetProxy = CDE8CA261BF1A234001DE892 /* PBXContainerItemProxy */;
+		};
+		CDE8CA321BF1A234001DE892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE8CA0B1BF1A234001DE892 /* CCGPopupBoxExample */;
+			targetProxy = CDE8CA311BF1A234001DE892 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDE8CA181BF1A234001DE892 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE8CA191BF1A234001DE892 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDE8CA1D1BF1A234001DE892 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE8CA1E1BF1A234001DE892 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDE8CA371BF1A234001DE892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDE8CA381BF1A234001DE892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDE8CA3A1BF1A234001DE892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CCGPopupBoxExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccg.CCGPopupBoxExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDE8CA3B1BF1A234001DE892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CCGPopupBoxExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccg.CCGPopupBoxExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDE8CA3D1BF1A234001DE892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CCGPopupBoxExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccg.CCGPopupBoxExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCGPopupBoxExample.app/CCGPopupBoxExample";
+			};
+			name = Debug;
+		};
+		CDE8CA3E1BF1A234001DE892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CCGPopupBoxExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccg.CCGPopupBoxExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCGPopupBoxExample.app/CCGPopupBoxExample";
+			};
+			name = Release;
+		};
+		CDE8CA401BF1A234001DE892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CCGPopupBoxExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccg.CCGPopupBoxExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CCGPopupBoxExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CDE8CA411BF1A234001DE892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CCGPopupBoxExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccg.CCGPopupBoxExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CCGPopupBoxExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDE8CA071BF1A234001DE892 /* Build configuration list for PBXProject "CCGPopupBoxExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE8CA371BF1A234001DE892 /* Debug */,
+				CDE8CA381BF1A234001DE892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE8CA391BF1A234001DE892 /* Build configuration list for PBXNativeTarget "CCGPopupBoxExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE8CA3A1BF1A234001DE892 /* Debug */,
+				CDE8CA3B1BF1A234001DE892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE8CA3C1BF1A234001DE892 /* Build configuration list for PBXNativeTarget "CCGPopupBoxExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE8CA3D1BF1A234001DE892 /* Debug */,
+				CDE8CA3E1BF1A234001DE892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE8CA3F1BF1A234001DE892 /* Build configuration list for PBXNativeTarget "CCGPopupBoxExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE8CA401BF1A234001DE892 /* Debug */,
+				CDE8CA411BF1A234001DE892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDE8CA041BF1A234001DE892 /* Project object */;
+}
