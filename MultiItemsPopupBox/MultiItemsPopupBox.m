@@ -16,7 +16,7 @@
 
 @interface MultiItemsPopupBox() <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic,strong) NSArray *dataItems;
-@property (nonatomic,copy) PopupItemSelectBlock complateBlock;
+@property (nonatomic,copy) PopupItemSelectBlock completeBlock;
 @property (nonatomic,assign) NSInteger scrollIndex;
 
 @property (nonatomic,weak) UITableView *tableContent;
@@ -39,9 +39,9 @@
 {
     self = [super initWithFrame:CGRectZero];
     if (self) {
-        _scrollIndex = scrollindex;
-        _dataItems = items;
-        _complateBlock = complate;
+        self.scrollIndex = scrollindex;
+        self.dataItems = items;
+        self.completeBlock = complate;
         
         CGFloat boxHeight = [self boxCalculateHeight];
         CGFloat boxWidth = [self boxCalculateWidth];
@@ -68,9 +68,9 @@
         if ([UIDevice currentDevice].systemVersion.floatValue>=8.0) {
             table.layoutMargins=UIEdgeInsetsZero;
         }
-        _lableTitle = label;
-        _lineView = singleLine;
-        _tableContent = table;
+        self.lableTitle = label;
+        self.lineView = singleLine;
+        self.tableContent = table;
         
         [self addSubview:singleLine];
         [self addSubview:label];
@@ -83,7 +83,7 @@
 {
     CGRect bounds = self.superview ? self.superview.bounds : [UIScreen mainScreen].bounds;
     CGFloat maxHeight = bounds.size.height-kEdgeSize*2;
-    CGFloat realHeight = _dataItems.count*kItemHeight + kTitleHeight;
+    CGFloat realHeight = self.dataItems.count*kItemHeight + kTitleHeight;
     return MIN(maxHeight,realHeight);
 }
 
@@ -94,9 +94,9 @@
     CGFloat boxWidth = [self boxCalculateWidth];
     
     self.bounds = CGRectMake(0, 0, boxWidth, boxHeight);
-    _lableTitle.frame = CGRectMake(0, 0, boxWidth, kTitleHeight-1);
-    _lineView.frame = CGRectMake(0, kTitleHeight-0.7, boxWidth, 0.7);
-    _tableContent.frame = CGRectMake(0, kTitleHeight, boxWidth, boxHeight-kTitleHeight);
+    self.lableTitle.frame = CGRectMake(0, 0, boxWidth, kTitleHeight-1);
+    self.lineView.frame = CGRectMake(0, kTitleHeight-0.7, boxWidth, 0.7);
+    self.tableContent.frame = CGRectMake(0, kTitleHeight, boxWidth, boxHeight-kTitleHeight);
     
     [super layoutSubviews];
 }
@@ -104,7 +104,7 @@
 -(CGFloat)boxCalculateWidth
 {
     CGFloat maxW = 0.0f;
-    NSArray* items = _dataItems;
+    NSArray* items = self.dataItems;
     for (PopupItemData* pitem in items) {
         CGSize titleSize = [pitem.text sizeWithAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:17]}];
         maxW = MAX(maxW, titleSize.width);
@@ -116,8 +116,8 @@
 
 -(void)scrollTableViewToIndex
 {
-    if (_scrollIndex>=0) {
-        [_tableContent scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_scrollIndex inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    if (self.scrollIndex>=0) {
+        [self.tableContent scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.scrollIndex inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
     }
 }
 
@@ -136,7 +136,7 @@
 #pragma - mark UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _dataItems.count;
+    return self.dataItems.count;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -152,7 +152,7 @@
     cell.textLabel.text = cellModel.text;
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     cell.separatorInset = UIEdgeInsetsZero;
-    if (_scrollIndex>=0 && [indexPath row]==_scrollIndex) {
+    if (self.scrollIndex>=0 && [indexPath row]==self.scrollIndex) {
         cell.textLabel.font = [UIFont boldSystemFontOfSize:17];
         cell.textLabel.textColor = [UIColor blueColor];
     } else {
@@ -175,8 +175,8 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.complateBlock) {
-        self.complateBlock([self.dataItems objectAtIndex:[indexPath row]]);
+    if (self.completeBlock) {
+        self.completeBlock([self.dataItems objectAtIndex:[indexPath row]]);
     }
     [self dismissWithAnimated:YES];
 }

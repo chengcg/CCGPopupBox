@@ -9,7 +9,7 @@
 #import "CCGPopupBoxOverlayWindow.h"
 
 @interface CCGPopupBoxOverlayWindow()
-@property (nonatomic,strong) UIWindow* oldKeyWindow;
+@property (nonatomic,weak) UIWindow* oldKeyWindow;
 @end
 
 @implementation CCGPopupBoxOverlayWindow
@@ -26,8 +26,20 @@
 {
     [super resignKeyWindow];
     [self.oldKeyWindow makeKeyWindow];
+    if (self.ccgDelegate && [self.ccgDelegate respondsToSelector:@selector(didResignKeyWindow:)]) {
+        [self.ccgDelegate didResignKeyWindow:self];
+    }
 }
 
+- (void)setHidden:(BOOL)hidden
+{
+    [super setHidden:hidden];
+    if (hidden) {
+        if (self.ccgDelegate && [self.ccgDelegate respondsToSelector:@selector(didHidden:)]) {
+            [self.ccgDelegate didHidden:self];
+        }
+    }
+}
 
 - (void)drawRect:(CGRect)rect
 {

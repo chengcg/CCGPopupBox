@@ -14,8 +14,8 @@
 {
     self = [super init];
     if (self) {
-        _text = text;
-        _data = data;
+        self.text = text;
+        self.data = data;
     }
     return self;
 }

@@ -73,7 +73,7 @@
 
 - (UIInterfaceOrientationMask) supportedInterfaceOrientations
 {
-    return _suportedInterfaceOrientations;
+    return self.controllerOrientations;
 }
 
 - (BOOL)shouldAutorotate

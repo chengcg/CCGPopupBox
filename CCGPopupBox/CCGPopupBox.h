@@ -21,17 +21,15 @@
 @end
 
 
-@class CCGPopupBoxOverlayWindow;
-
 @interface CCGPopupBox : UIView
 
-@property (nonatomic, strong) id<CCGPopupBoxDelegate> delegate;
-@property (nonatomic, assign) NSUInteger suportedInterfaceOrientations;
+@property (nonatomic, weak) id<CCGPopupBoxDelegate> boxDelegate;
+@property (nonatomic, assign) UIInterfaceOrientationMask boxOrientations;
 
--(void)show;
--(void)showModal;
+- (void)show;
+- (void)showModal;
 
 - (void)dismissFromWindowTouch;
--(void)dismissWithAnimated:(BOOL)animated;
+- (void)dismissWithAnimated:(BOOL)animated;
 
 @end

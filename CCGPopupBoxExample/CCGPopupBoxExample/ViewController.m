@@ -49,7 +49,7 @@
     {
         self.labelText.font = [UIFont fontWithName:data.text size:18];
     }];
-    box.suportedInterfaceOrientations = self.supportedInterfaceOrientations;
+    box.boxOrientations = self.supportedInterfaceOrientations;
     [box show];
 }
 
@@ -58,7 +58,7 @@
     [colorView color:self.labelText.textColor complationBlock:^(UIColor *color) {
         self.labelText.textColor = color;
     }];
-    colorView.suportedInterfaceOrientations = self.supportedInterfaceOrientations;
+    colorView.boxOrientations = self.supportedInterfaceOrientations;
     [colorView show];
 }
 @end

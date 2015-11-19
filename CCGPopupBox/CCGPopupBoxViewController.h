@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CCGPopupBoxViewController : UIViewController
-@property (assign, nonatomic) NSUInteger suportedInterfaceOrientations;
-@property (nonatomic,assign) BOOL modalType;
+@property (nonatomic, assign) UIInterfaceOrientationMask controllerOrientations;
+@property (nonatomic, assign) BOOL modalType;
 @end
